@@ -1,0 +1,38 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20px;
+  background: #D5CABE url("../images/gaming-pattern.png"); /* Background pattern from Subtle Patterns */
+}
+.score-panel {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+  padding: 15px;
+  width: 505px;
+  border-radius: 5px;
+  border: 1px solid #EDEDED;
+  background: #fff;
+}
+
+.lives {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.lives li {
+    list-style: none;
+    display: inline-block;
+}
+.lives img {
+  width: 30px;
+
+}
+canvas {
+ margin-top: -40px;
+}
