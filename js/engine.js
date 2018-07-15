@@ -81,7 +81,7 @@ const Engine = ((global => {
   */
  function update(dt) {
      updateEntities(dt);
-     // checkCollisions();
+     //checkCollisions();
  }
 
  /* This is called by the update function and loops through all of the
@@ -94,6 +94,9 @@ const Engine = ((global => {
  function updateEntities(dt) {
      allEnemies.forEach(enemy => {
          enemy.update(dt);
+     });
+     allGems.forEach(gem => {
+         gem.update();
      });
      player.update();
  }
@@ -129,6 +132,7 @@ const Engine = ((global => {
    * and, using the rowImages array, draw the correct image for that
    * portion of the "grid"
    */
+
   for (row = 0; row < numRows; row++) {
       for (col = 0; col < numCols; col++) {
           /* The drawImage function of the canvas' context element
@@ -156,7 +160,9 @@ const Engine = ((global => {
      allEnemies.forEach(enemy => {
          enemy.render();
      });
-
+     allGems.forEach(gem => {
+         gem.render();
+     });
      player.render();
  }
 
@@ -173,11 +179,16 @@ const Engine = ((global => {
   * all of these images are properly loaded our game will start.
   */
  Resources.load([
-     'images/stone-block.png',
-     'images/water-block.png',
-     'images/grass-block.png',
-     'images/enemy-bug.png',
-     'images/char-boy.png'
+    'images/heart.png',
+    'images/gem-orange.png',
+    'images/gem-green.png',
+    'images/selector.png',
+    'images/gem-blue.png',
+    'images/stone-block.png',
+    'images/water-block.png',
+    'images/grass-block.png',
+    'images/enemy-bug.png',
+    'images/char-boy.png'
  ]);
  Resources.onReady(init);
 
