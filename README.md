@@ -1,6 +1,43 @@
-frontend-nanodegree-arcade-game
-===============================
+# Arcade Game Project
 
-Students should use this [rubric](https://review.udacity.com/#!/projects/2696458597/rubric) for self-checking their submission. Make sure the functions you write are **object-oriented** - either class functions (like Player and Enemy) or class prototype functions such as Enemy.prototype.checkCollisions, and that the keyword 'this' is used appropriately within your class and class prototype functions to refer to the object the function is called upon. Also be sure that the **readme.md** file is updated with your instructions on both how to 1. Run and 2. Play your arcade game.
+* [About](#about)
+* [Instructions](#instructions)
+* [Screenshots](#screenshots)
+* [Dependencies](#dependencies)
 
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+
+## About
+
+* This game is made as a project for Udacity front-end developer scholarship by Google.
+* Uses starter code provided by Udacity.
+
+
+## Instructions
+
+Game goal is to move player across the water.
+
+On the lane player can find these collectibles: orange gem - adds 50 points, shining rectangle - will teleport the player to the safe zone (water), heart - adds one life, or adds 20 points, if lives are full.
+
+The player should avoid bugs - collision with a bug removes one life and resets player position back to the grass.
+
+* You can access the game by this link: [Arcade Game](https://gretagr.github.io/arcadeGame/)
+* Score panel displays game statistics: timer, lives, and score.
+* Timer starts when the user moves the player for the first time.
+* Grass and water are safe zones - enemy can't reach you there.
+
+
+#### CONTROLS:
+
+You should use your keyboard to control player movement. The player moves one tile at a time.
+
+ * Arrow UP - moves the player up.
+ * Arrow DOWN - moves the player down.
+ * Arrow LEFT - moves player left.
+ * Arrow RIGHT - moves player right.
+
+## Screenshots
+
+![game preview](http://res.cloudinary.com/dr9fu7tqw/image/upload/q_auto:eco/v1531725563/arcade-print-scrn_bwfgxa.png)
+
+## Dependencies
+* [Roboto, Google Fonts](https://fonts.google.com/specimen/Roboto)

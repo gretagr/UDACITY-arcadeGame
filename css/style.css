@@ -1,73 +1,108 @@
 * {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
+
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Roboto Mono', monospace;
-  font-size: 20px;
-  background: #D5CABE url("../images/gaming-pattern.png"); /* Background pattern from Subtle Patterns */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 20px;
+	background: #D5CABE url("../images/gaming-pattern.png");
+	/* Background pattern from Subtle Patterns */
 }
+
 .score-panel {
-  display: flex;
-  box-sizing: border-box;
-  justify-content: space-between;
-  align-content: space-between;
-  flex-wrap: wrap;
-  padding: 15px;
-  width: 505px;
-  border-radius: 5px;
-  border: 1px solid #EDEDED;
-  background: #fff;
+	display: flex;
+	box-sizing: border-box;
+	justify-content: space-between;
+	align-content: space-between;
+	flex-wrap: wrap;
+	padding: 15px;
+	width: 505px;
+	border-radius: 5px;
+	border: 1px solid #EDEDED;
+	background: #fff;
 }
+
+.rules {
+	justify-content: space-between;
+	align-items: flex-end;
+	height: auto;
+	width: 505px;
+	display: flex;
+}
+
+.rules p {
+	font-size: 14px;
+	width: auto;
+	margin: 0;
+}
+
+.rules img {
+	width: 20px;
+}
+
 .modal-bc {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
+
 .modal {
-text-align: center;
-background: rgba(255, 255, 255, 0.8);
-width: 450px;
-height: 450px;
-border-radius: 8px;
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-align-content: center;
+	text-align: center;
+	background: rgba(255, 255, 255, 0.9);
+	width: 450px;
+	height: auto;
+	border-radius: 8px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+  padding: 15px;
+  box-sizing: border-box;
 }
 
 .hidden {
-  display: none;
+	display: none;
 }
 
 h1 {
-  margin: 15px 0;
+	margin: 15px 0;
 }
-h4, h3, p {
-  width: 450px;
-  margin: 10px 0;
+
+.modal h4,
+h3,
+h5,
+p {
+	width: 430px;
+	margin: 10px 0;
+}
+p {
+  font-size: 16px;
 }
 .lives {
-  width: 100%;
-  padding: 0;
-  margin: 0;
+	width: 100%;
+	padding: 0;
+	margin: 0;
 }
+
 .lives li {
-    list-style: none;
-    display: inline-block;
+	list-style: none;
+	display: inline-block;
 }
+
 .lives img {
-  width: 30px;
+	width: 30px;
 }
+
 canvas {
- margin-top: -40px;
+	margin-top: -40px;
 }
