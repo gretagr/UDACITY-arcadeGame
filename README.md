@@ -21,6 +21,7 @@ On the lane player can find these collectibles: orange gem - adds 50 points, shi
 The player should avoid bugs - collision with a bug removes one life and resets player position back to the grass.
 
 * You can access the game by this link: [Arcade Game](https://gretagr.github.io/arcadeGame/)
+* Or you can download/clone repository and start game by opening index.html file.
 * Score panel displays game statistics: timer, lives, and score.
 * Timer starts when the user moves the player for the first time.
 * Grass and water are safe zones - enemy can't reach you there.
